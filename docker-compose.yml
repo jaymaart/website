@@ -1,0 +1,9 @@
+services:
+  # Next.js Portfolio App
+  portfolio:
+    image: vroles/website:main
+    container_name: jdev-web
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - NEXT_TELEMETRY_DISABLED=1

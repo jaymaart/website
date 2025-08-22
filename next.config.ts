@@ -1,7 +1,24 @@
-import type { NextConfig } from "next";
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+	output: 'standalone',
+	experimental: {
+		turbo: {
+			rules: {
+				'*.svg': {
+					loaders: ['@svgr/webpack'],
+					as: '*.js',
+				},
+			},
+		},
+	},
+	images: {
+		unoptimized: true,
+	},
+	// Enable static exports for better performance
+	trailingSlash: true,
+	// Disable telemetry
+	telemetry: false,
 };
 
 export default nextConfig;
