@@ -201,7 +201,7 @@ export default function ProjectsSection() {
 					Featured Projects
 				</h2>
 				<p className="text-gray-400 text-lg max-w-2xl mx-auto">
-					Here are some of the projects I've built that showcase my skills and passion for creating exceptional digital experiences.
+					Here are some of the projects I&apos;ve built that showcase my skills and passion for creating exceptional digital experiences.
 				</p>
 			</motion.div>
 

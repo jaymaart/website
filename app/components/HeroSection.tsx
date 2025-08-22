@@ -15,7 +15,12 @@ export default function HeroSection() {
 			{/* Simplified background layers */}
 			<div className="absolute inset-0 bg-gradient-to-br from-purple-900/30 via-blue-900/20 to-indigo-900/30" />
 			<div className="absolute inset-0">
-				<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.6),rgba(0,0,0,0.95))]" />
+				<div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_50%,rgba(17,24,39,0.4),rgba(0,0,0,0.8))]" />
+			</div>
+			
+			{/* Particle background - moved after background but with higher z-index */}
+			<div className="absolute inset-0 z-5">
+				<ParticleBackground />
 			</div>
 			
 			{/* Single optimized floating element */}
@@ -28,11 +33,8 @@ export default function HeroSection() {
 					repeat: Infinity, 
 					ease: "easeInOut" 
 				}}
-				className="absolute top-20 left-10 w-20 h-20 bg-purple-500/10 rounded-full blur-2xl"
+				className="absolute top-20 left-10 w-20 h-20 bg-purple-500/10 rounded-full blur-2xl z-5"
 			/>
-
-			{/* Particle background */}
-			<ParticleBackground />
 
 			<div className="relative z-10 text-center">
 				<motion.div

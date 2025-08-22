@@ -47,9 +47,9 @@ export default function SkillsSection() {
 					<h2 className="text-3xl md:text-4xl font-bold mb-4">
 						Skills & Technologies
 					</h2>
-					<p className="text-gray-400 text-lg max-w-2xl mx-auto">
-						I've mastered a diverse set of technologies and continue to expand my skill set with emerging tools and frameworks.
-					</p>
+									<p className="text-gray-400 text-lg max-w-2xl mx-auto">
+					I&apos;ve mastered a diverse set of technologies and continue to expand my skill set with emerging tools and frameworks.
+				</p>
 				</motion.div>
 
 				<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
