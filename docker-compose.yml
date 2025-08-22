@@ -6,4 +6,3 @@ services:
     restart: unless-stopped
     environment:
       - NODE_ENV=production
-      - NEXT_TELEMETRY_DISABLED=1
