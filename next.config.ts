@@ -13,10 +13,14 @@ const nextConfig: NextConfig = {
 		},
 	},
 	images: {
-		unoptimized: true,
+		unoptimized: false,
+		domains: [],
+		remotePatterns: [],
 	},
 	// Enable static exports for better performance
 	trailingSlash: true,
+	// Ensure public folder is properly served
+	distDir: '.next',
 };
 
 export default nextConfig;
