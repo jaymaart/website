@@ -17,8 +17,6 @@ const nextConfig: NextConfig = {
 	},
 	// Enable static exports for better performance
 	trailingSlash: true,
-	// Disable telemetry
-	telemetry: false,
 };
 
 export default nextConfig;
